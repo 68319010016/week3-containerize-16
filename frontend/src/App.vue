@@ -266,11 +266,11 @@ onMounted(fetchProducts)
      <!-- FOOTER -->
     <footer class="app-footer">
       <div class="footer-content">
-        <span class="footer-logo">📦 StockPro</span>
+        <span class="footer-logo">นายชนน สุทธิรักษ์</span>
         <span class="footer-sep">·</span>
-        <span>นายชนน สุทธิรักษ์ ปวส.2/3 68319010016</span>
+        <span>ปวส.2/3</span>
         <span class="footer-sep">·</span>
-        <span>© {{ new Date().getFullYear() }} All rights reserved</span>
+        <span> 68319010016</span>
       </div>
     </footer>
 
