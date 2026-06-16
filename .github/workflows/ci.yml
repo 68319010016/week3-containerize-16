@@ -4,11 +4,11 @@ name: CI — StockPro    # ชื่อที่โชว์ใน GitHub Action
 on:
   push:
     branches:
-      - develop          # ทริกเกอร์เมื่อ push ไป develop
+      - Develop          # ทริกเกอร์เมื่อ push ไป Develop
       - 'feature/**'     # ทริกเกอร์เมื่อ push ไป feature/xxx
   pull_request:
     branches:
-      - develop          # ทริกเกอร์เมื่อเปิด PR เข้า develop
+      - Develop          # ทริกเกอร์เมื่อเปิด PR เข้า Develop
       - main             # ทริกเกอร์เมื่อเปิด PR เข้า main
 
 # ── jobs: งานที่ต้องทำ ─────────────────────────────────────────
