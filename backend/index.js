@@ -12,7 +12,7 @@ app.use(express.json());
 app.get('/', async (req, res) => {
   try {
     await pool.query('SELECT 1');
-    res.json({ status: 'AiGuide', service: 'StockPro API', timestamp: new Date() });
+    res.json({ status: 'AiGuideRich', service: 'StockPro API', timestamp: new Date() });
   } catch (err) {
     res.status(503).json({ status: 'error', message: err.message });
   }
