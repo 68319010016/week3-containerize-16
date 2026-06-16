@@ -12,6 +12,15 @@ app.use(express.json());
 app.get('/', async (req, res) => {
   try {
     await pool.query('SELECT 1');
+    res.json({ status: 'AiGuideRich', service: 'StockPro API', timestamp: new Date() });
+  } catch (err) {
+    res.status(503).json({ status: 'error', message: err.message });
+  }
+});
+
+app.get('/health', async (req, res) => {
+  try {
+    await pool.query('SELECT 1');
     res.json({ status: 'Kai', service: 'StockPro API', timestamp: new Date() });
   } catch (err) {
     res.status(503).json({ status: 'error', message: err.message });
