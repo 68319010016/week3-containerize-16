@@ -262,6 +262,20 @@ onMounted(fetchProducts)
       </div>
 
     </main>
+
+     <!-- FOOTER -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <span class="footer-logo">📦 StockPro</span>
+        <span class="footer-sep">·</span>
+        <span>นายชนน สุทธิรักษ์ ปวส.2/3 68319010016</span>
+        <span class="footer-sep">·</span>
+        <span>© {{ new Date().getFullYear() }} All rights reserved</span>
+      </div>
+    </footer>
+
+    <!-- ADD/EDIT MODAL -->
+
         <!-- ADD/EDIT MODAL -->
     <div class="overlay" v-if="showModal" @click.self="showModal = false">
       <div class="modal">
@@ -508,6 +522,18 @@ onMounted(fetchProducts)
   font-weight: 700; cursor: pointer;
 }
 .btn-danger-confirm:hover { background: #b91c1c; }
+
+.app-footer {
+  margin-top: 3rem;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  font-size: .82rem;
+  color: #94a3b8;
+}
+.footer-logo { font-weight: 700; color: #065f46; }
+.footer-sep  { margin: 0 .5rem; }
 
 @media (max-width: 640px) {
   .form-row { grid-template-columns: 1fr; }
